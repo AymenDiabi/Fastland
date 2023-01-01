@@ -234,7 +234,7 @@ select {
 
 .center {
   width: 66.6667%;
-  margin: 5rem auto;
+  margin: 5rem auto 0 auto;
 }
 
 .primary-heading {
@@ -283,9 +283,9 @@ label {
   height: 4.3rem;
   width: 32.5rem;
   max-width: 32.5rem;
-  padding: .8rem 1rem;
+  padding: 0.8rem 1rem;
   border-radius: 75px;
-  background-color: #F2F5FB;
+  background-color: #f2f5fb;
   border: 0;
 }
 
@@ -299,7 +299,7 @@ label {
   background-color: var(--primary-clr);
   border-radius: 55px;
   color: #fff;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   width: 8.6rem;
   height: 3rem;
   position: absolute;
@@ -342,4 +342,60 @@ label {
   .form-control {
     max-width: 25rem;
   }
+}
+
+/* Features Section */
+
+.features-section {
+  background-color: #6a26da;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  padding-top: 6.5rem;
+  padding-bottom: 6rem;
+  margin-bottom: 10rem;
+}
+
+.features-list {
+  grid-area: list;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.features-link:link,
+.features-link:visited {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.12rem;
+  font-weight: 500;
+  padding-bottom: 0.8rem;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.7);
+}
+
+.pm-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  z-index: 1;
+}
+
+.image-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.second-vector {
+  transform: matrix(0, 1, 1, 0, 0, 0);
+  background-color: #ffce3e;
+  bottom: -16%;
+  left: 6%;
+  z-index: -1;
+}
+
+.image-wrapper img {
+  width: 70%;
+  margin-inline: auto;
+  object-fit: cover;
 }
