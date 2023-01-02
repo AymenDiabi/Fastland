@@ -178,7 +178,7 @@ select {
 .nav-list {
   display: flex;
   justify-content: flex-start;
-  gap: 2.5rem;
+  gap: 4rem;
   flex: 2;
 }
 
