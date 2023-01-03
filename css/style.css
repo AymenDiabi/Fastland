@@ -151,8 +151,12 @@ select {
   }
 }
 
+header {
+  width: 100%;
+}
+
 .container {
-  max-width: 83vw;
+  max-width: 60rem;
   margin-inline: auto;
 }
 
@@ -178,7 +182,7 @@ select {
 .nav-list {
   display: flex;
   justify-content: flex-start;
-  gap: 4rem;
+  gap: 3rem;
   flex: 2;
 }
 
@@ -492,4 +496,10 @@ label {
 .feature-p {
   color: rgba(255, 255, 255, 0.7);
   line-height: 28px;
+}
+
+@media (max-width: 62em) {
+  .nav-list {
+    gap: 2rem;
+}
 }
