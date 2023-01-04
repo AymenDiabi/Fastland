@@ -248,6 +248,7 @@ header {
 }
 
 .center {
+  /* change the width in the media queries */
   width: 66.6667%;
   margin: 5rem auto 0 auto;
 }
@@ -330,11 +331,13 @@ label {
   border-radius: 0 100% 0 0;
   left: 0;
   bottom: 0;
+  z-index: -2;
 }
 
 .dotted {
   position: absolute;
   right: -4%;
+  z-index: -2;
 }
 
 .dotted img {
@@ -402,6 +405,7 @@ label {
   color: #ffd166;
   border-bottom-color: #ffd166;
 }
+
 .pm-wrapper {
   display: flex;
   justify-content: center;
