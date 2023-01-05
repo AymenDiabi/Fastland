@@ -525,8 +525,8 @@ label {
 }
 
 .icon svg {
-  width: 2rem;
-  height: 2rem;
+  width: 32px;
+  height: 32px;
 }
 
 .scnd-icon {
@@ -549,12 +549,16 @@ label {
 
   .pm-wrapper {
     gap: 1rem;
-    width: 86vw;
+    width: 92vw;
 }
 
   .image-wrapper img {
     width: 100%;
 }
+
+  .second-vector {
+    display: none;
+  }
 
   .heading {
     margin-bottom: 45px;
@@ -577,4 +581,21 @@ label {
     font-size: 1.1rem;
     margin-bottom: 0.4rem;
   }
+
+  .icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+  .feature-p {
+    font-size: 0.9rem;
+    line-height: 26px;
+  }
+
+
 }
