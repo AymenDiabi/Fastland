@@ -189,6 +189,7 @@ header {
   justify-content: flex-start;
   gap: 3rem;
   flex: 2 1 auto;
+  padding-left: 0;
 }
 
 .nav-link-item:link,
@@ -253,8 +254,7 @@ header {
 }
 
 .center {
-  /* change the width in the media queries */
-  width: 66.6667%;
+  max-width: 66.6667%;
   margin: 5rem auto 0 auto;
 }
 
@@ -373,7 +373,9 @@ label {
     justify-content: center;
   }
 
-  
+  .center {
+    max-width: 84%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -385,6 +387,17 @@ label {
     max-width: 25rem;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 /* Features Section */
 
@@ -511,6 +524,11 @@ label {
   background-color: #ff8d52;
 }
 
+.icon svg {
+  width: 2rem;
+  height: 2rem;
+}
+
 .scnd-icon {
   background-color: #15cda8;
 }
@@ -524,4 +542,39 @@ label {
 .feature-p {
   color: rgba(255, 255, 255, 0.7);
   line-height: 28px;
+}
+
+
+@media (max-width: 62em) {
+
+  .pm-wrapper {
+    gap: 1rem;
+    width: 86vw;
+}
+
+  .image-wrapper img {
+    width: 100%;
+}
+
+  .heading {
+    margin-bottom: 45px;
+  }
+
+  .secondary-heading {
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 3.6rem;
+    letter-spacing: -2px;
+  }
+
+  .info-text-box {
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .feature-caption {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+  }
 }
