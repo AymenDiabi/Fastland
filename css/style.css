@@ -170,7 +170,7 @@ header {
 .middle {
   text-align: center;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin-inline: auto;
 }
@@ -359,14 +359,13 @@ label {
 
 @media (max-width: 62em) {
 
-  .nav .logo {
-  flex: 1 1 auto;
-}
-
-  .nav-wrapper {
-    display: flex;
-    flex: 1 1 auto;
+  .mobile-nav {
+    display: none;
   }
+
+  .middle {
+  justify-content: center;
+}
 
   .nav-list {
     gap: 2rem;
@@ -379,9 +378,6 @@ label {
 }
 
 @media (max-width: 600px) {
-  .mobile-nav {
-    display: none;
-  }
 
   .form-control {
     max-width: 25rem;
@@ -548,33 +544,53 @@ label {
 @media (max-width: 62em) {
 
   .pm-wrapper {
-    gap: 1rem;
-    width: 92vw;
+    gap: 3rem;
+    flex-direction: column;
 }
 
   .image-wrapper img {
-    width: 100%;
-}
-
-  .second-vector {
-    display: none;
+    width: 80%;
   }
 
+  .second-vector {
+    bottom: -14%;
+    left: 2%;
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .features-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 85%;
+  }
   .heading {
     margin-bottom: 45px;
   }
 
   .secondary-heading {
-    color: #fff;
     font-size: 3.2rem;
-    font-weight: 700;
     line-height: 3.6rem;
-    letter-spacing: -2px;
   }
 
   .info-text-box {
     gap: 1rem;
     width: 100%;
+    flex-direction: row;
+  }
+
+  .feature {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .feature-text {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .feature-caption {
@@ -595,7 +611,9 @@ label {
   .feature-p {
     font-size: 0.9rem;
     line-height: 26px;
+    text-align: center;
   }
+
 
 
 }
